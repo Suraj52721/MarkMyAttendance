@@ -5,7 +5,7 @@ This privacy policy applies to the MarkMyAttendance app (hereby referred to as "
 Information Collection and Use
 The Application collects information when you download and use it. This information may include information such as
 
-Your device's Internet Protocol address (e.g. IP address)
+Your device's Unique ID
 The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
 The time spent on the Application
 The operating system you use on your mobile device
