@@ -3,28 +3,21 @@ This privacy policy applies to the MarkMyAttendance app (hereby referred to as "
 
 
 Information Collection and Use
-The Application collects information when you download and use it. This information may include information such as
+The Application does not collect any information. However it uses some of the information to verify users identity which may include information such as
 
 Your device's Unique ID
-The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
-The time spent on the Application
 The operating system you use on your mobile device
 
-The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
+The Application verify your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
 
 Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.
-Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.
-Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.
-
-The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
 
 
 For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to suraj.52721@gmail.com. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
 
 Third Party Access
-Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
-
+No any aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. 
 
 Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
 
