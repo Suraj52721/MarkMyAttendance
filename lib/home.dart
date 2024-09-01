@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:attendance_manager/process.dart';
+import 'package:attendance_manager/view_attendance.dart';
 import 'package:device_uuid/device_uuid.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
@@ -53,15 +54,27 @@ class _QRpageState extends State<QRpage> {
                       border: Border.all(color: Colors.white, width: 1),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: FutureBuilder(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        OutlinedButton(onPressed: (){
+                          //pause camera
+                          controller!.pauseCamera();
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => ViewAttendance()));
+                        }, child: Text('View Attendance', style: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),)),
+                        FutureBuilder(
                       future: DeviceUuid().getUUID(),
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
-                          return Text(
+                          print(snapshot.data.toString());
+                          return SelectableText(
                             '${snapshot.data}',
                             textAlign: TextAlign.center,
                             style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           );
                         } else {
@@ -69,6 +82,8 @@ class _QRpageState extends State<QRpage> {
                               textAlign: TextAlign.center);
                         }
                       },
+                    )
+                      ]
                     )),
               ),
               Expanded(

@@ -1,0 +1,260 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alpha01.markmyattendance"
+4    android:versionCode="5"
+5    android:versionName="1.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:3:5-79
+11-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:3:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:4:5-81
+12-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:4:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:5:5-67
+13-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:5:22-64
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+14-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:6:5-74
+14-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:6:22-72
+15
+16    <permission
+16-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.alpha01.markmyattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.alpha01.markmyattendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+21    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:22:5-65
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:22:22-62
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:25:5-27:36
+23        android:name="android.hardware.camera"
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:26:9-47
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:27:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:28:5-30:36
+26        android:name="android.hardware.camera.front"
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:29:9-53
+27        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:30:9-33
+28    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:33:5-35:36
+30        android:name="android.hardware.camera.autofocus"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:34:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:35:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:36:5-38:36
+33        android:name="android.hardware.camera.flash"
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:37:9-53
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:38:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:39:5-41:36
+36        android:name="android.hardware.screen.landscape"
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:40:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:41:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:42:5-44:36
+39        android:name="android.hardware.wifi"
+39-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:43:9-45
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:44:9-33
+41
+42    <application
+43        android:name="android.app.Application"
+43-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:10:9-42
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.13.0] /home/user/.gradle/caches/transforms-3/407a7d7fc886b4b95c58cca83ba407e8/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:11:9-43
+46        android:label="MarkMyAttendance" >
+46-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:9:9-41
+47        <activity
+47-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:12:9-32:20
+48            android:name="com.example.attendance_manager.MainActivity"
+48-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:13:13-41
+49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:17:13-163
+50            android:exported="true"
+50-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:14:13-36
+51            android:hardwareAccelerated="true"
+51-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:18:13-47
+52            android:launchMode="singleTop"
+52-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:15:13-43
+53            android:theme="@style/LaunchTheme"
+53-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:16:13-47
+54            android:windowSoftInputMode="adjustResize" >
+54-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:19:13-55
+55
+56            <!--
+57                 Specifies an Android theme to apply to this Activity as soon as
+58                 the Android process has started. This theme is visible to the user
+59                 while the Flutter UI initializes. After that, this theme continues
+60                 to determine the Window background behind the Flutter UI.
+61            -->
+62            <meta-data
+62-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:24:13-27:17
+63                android:name="io.flutter.embedding.android.NormalTheme"
+63-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:25:15-70
+64                android:resource="@style/NormalTheme" />
+64-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:26:15-52
+65
+66            <intent-filter>
+66-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:28:13-31:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:29:17-68
+67-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:29:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:30:17-76
+69-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:30:27-74
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+76-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:35:9-37:33
+77            android:name="flutterEmbedding"
+77-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:36:13-44
+78            android:value="2" />
+78-->/home/user/MarkMyAttendance/android/app/src/main/AndroidManifest.xml:37:13-30
+79
+80        <service
+80-->[:geolocator_android] /home/user/MarkMyAttendance/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:56
+81            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+81-->[:geolocator_android] /home/user/MarkMyAttendance/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-77
+82            android:enabled="true"
+82-->[:geolocator_android] /home/user/MarkMyAttendance/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-35
+83            android:exported="false"
+83-->[:geolocator_android] /home/user/MarkMyAttendance/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+84            android:foregroundServiceType="location" />
+84-->[:geolocator_android] /home/user/MarkMyAttendance/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-53
+85
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] /home/user/.gradle/caches/transforms-3/78fbd64af62dbdf102ba7c817970421b/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+92
+93        <activity
+93-->[com.google.android.gms:play-services-base:18.3.0] /home/user/.gradle/caches/transforms-3/08b8b0c397ded9cbecdea18eb603bcf2/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:18.3.0] /home/user/.gradle/caches/transforms-3/08b8b0c397ded9cbecdea18eb603bcf2/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:18.3.0] /home/user/.gradle/caches/transforms-3/08b8b0c397ded9cbecdea18eb603bcf2/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:18.3.0] /home/user/.gradle/caches/transforms-3/08b8b0c397ded9cbecdea18eb603bcf2/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+97
+98        <meta-data
+98-->[com.google.android.gms:play-services-basement:18.3.0] /home/user/.gradle/caches/transforms-3/eb44e70dfc87ce382182ee0f48770cd6/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+99            android:name="com.google.android.gms.version"
+99-->[com.google.android.gms:play-services-basement:18.3.0] /home/user/.gradle/caches/transforms-3/eb44e70dfc87ce382182ee0f48770cd6/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+100            android:value="@integer/google_play_services_version" />
+100-->[com.google.android.gms:play-services-basement:18.3.0] /home/user/.gradle/caches/transforms-3/eb44e70dfc87ce382182ee0f48770cd6/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+101
+102        <provider
+102-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+103            android:name="androidx.startup.InitializationProvider"
+103-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+104            android:authorities="com.alpha01.markmyattendance.androidx-startup"
+104-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+105            android:exported="false" >
+105-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+106            <meta-data
+106-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+107                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+107-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+108                android:value="androidx.startup" />
+108-->[androidx.emoji2:emoji2:1.0.0] /home/user/.gradle/caches/transforms-3/02e12743c4eb926089f664015c62ce2d/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+109            <meta-data
+109-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/user/.gradle/caches/transforms-3/036e1d7bfc54871c92f7c47615769fbd/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+110-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/user/.gradle/caches/transforms-3/036e1d7bfc54871c92f7c47615769fbd/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+111                android:value="androidx.startup" />
+111-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/user/.gradle/caches/transforms-3/036e1d7bfc54871c92f7c47615769fbd/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+114                android:value="androidx.startup" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+115        </provider>
+116
+117        <activity
+117-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+118            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+118-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+119            android:clearTaskOnLaunch="true"
+119-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+120            android:screenOrientation="sensorLandscape"
+120-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+121            android:stateNotNeeded="true"
+121-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+122            android:theme="@style/zxing_CaptureTheme"
+122-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+123            android:windowSoftInputMode="stateAlwaysHidden" />
+123-->[com.journeyapps:zxing-android-embedded:4.3.0] /home/user/.gradle/caches/transforms-3/925c8f21a028073eff523f59da0d3f0d/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+124
+125        <receiver
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+126            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+127            android:directBootAware="false"
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+128            android:enabled="true"
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+129            android:exported="true"
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+130            android:permission="android.permission.DUMP" >
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+132                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+135                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+136            </intent-filter>
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+138                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+141                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/user/.gradle/caches/transforms-3/23bd5f9a4f45be60dcd47044375cf5bf/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+142            </intent-filter>
+143        </receiver>
+144    </application>
+145
+146</manifest>

@@ -1,8 +1,10 @@
+import 'package:attendance_manager/view_attendance.dart';
+import 'package:device_uuid/device_uuid.dart';
 import 'package:gsheets/gsheets.dart';
 import 'api_key.dart';
 
 class GSheetsAPI {
-  _credentials = ApiKey.credentials;
+  static const _credentials = ApiKey.credentials;
 
   /// Your spreadsheet id
   ///
@@ -71,26 +73,46 @@ class GSheetsAPI {
   static Future<void> markAttendance(String uniqueId, String date) async {
     //get row id of the uniqueId
     final col1 = await _worksheet.values.column(2);
-
     final row = col1.indexOf(uniqueId) + 1;
-
     final row1 = await _worksheet.values.row(2);
-
     final column = row1.indexOf(date);
-
     await _worksheet.values.insertValue(0.5, column: column + 1, row: row);
   }
 
   static Future<void> markAttendance2(String uniqueId, String date) async {
     //get row id of the uniqueId
     final col1 = await _worksheet2.values.column(2);
-
     final row = col1.indexOf(uniqueId) + 1;
-
     final row1 = await _worksheet2.values.row(2);
-
     final column = row1.indexOf(date);
-
     await _worksheet2.values.insertValue(0.5, column: column + 1, row: row);
   }
+
+  //view attendance
+  static Future<Map> viewAttendance(String? uniqueId) async {
+    final column = await _worksheet.values.column(2);
+    final index_of_uid = column.indexOf(uniqueId!);
+    final attendrow = await _worksheet.values.row(index_of_uid + 1);
+    final daterow = await _worksheet.values.row(2);
+    Map attend = {};
+    for (int i = 2; i < attendrow.length; i++) {
+      attend[daterow[i]] = attendrow[i];
+    }
+    return attend;
+
+  }
+
+  static Future<Map> viewAttendance2(String? uniqueId) async {
+    final column = await _worksheet2.values.column(2);
+    final index_of_uid = column.indexOf(uniqueId!);
+    final attendrow = await _worksheet2.values.row(index_of_uid + 1);
+    final daterow = await _worksheet2.values.row(2);
+    Map attend = {};
+    for (int i = 2; i < attendrow.length; i++) {
+      attend[daterow[i]] = attendrow[i];
+    }
+    return attend;
+
+  }
+
 }

@@ -1,5 +1,6 @@
 import 'package:attendance_manager/gsheets.dart';
 import 'package:attendance_manager/home.dart';
+import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -24,7 +25,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return CalendarControllerProvider(
+    controller: EventController(),
+    child: MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'MarkMyAttendance',
       theme: ThemeData(
@@ -32,6 +35,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const QRpage(),
-    );
+    ),
+);
   }
 }
