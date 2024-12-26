@@ -80,6 +80,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "detect_fake_location",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/detect_fake_location-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "device_uuid",
       "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/device_uuid-0.0.4",
       "packageUri": "lib/",
@@ -278,6 +284,42 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "permission_handler",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler-11.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "permission_handler_android",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler_android-12.0.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "permission_handler_apple",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler_apple-9.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "permission_handler_html",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler_html-0.1.3+2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "permission_handler_platform_interface",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler_platform_interface-4.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "permission_handler_windows",
+      "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/permission_handler_windows-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "petitparser",
       "rootUri": "file:///home/user/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
@@ -398,7 +440,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-07-10T08:49:02.235422Z",
+  "generated": "2024-12-26T15:14:48.328467Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///home/user/flutter",

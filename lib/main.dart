@@ -11,6 +11,7 @@ void main() async {
   runApp(const MyApp());
 
   // Request location permission
+
   if (await Geolocator.checkPermission() == LocationPermission.denied) {
     await Geolocator.requestPermission();
   }
@@ -26,16 +27,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CalendarControllerProvider(
-    controller: EventController(),
-    child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'MarkMyAttendance',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      controller: EventController(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'MarkMyAttendance',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const QRpage(),
       ),
-      home: const QRpage(),
-    ),
-);
+    );
   }
 }

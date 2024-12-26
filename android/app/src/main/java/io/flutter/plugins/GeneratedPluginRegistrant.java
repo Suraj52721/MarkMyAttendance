@@ -16,6 +16,11 @@ public final class GeneratedPluginRegistrant {
   private static final String TAG = "GeneratedPluginRegistrant";
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
+      flutterEngine.getPlugins().add(new com.xeex.detect_fake_location.DetectFakeLocationPlugin());
+    } catch (Exception e) {
+      Log.e(TAG, "Error registering plugin detect_fake_location, com.xeex.detect_fake_location.DetectFakeLocationPlugin", e);
+    }
+    try {
       flutterEngine.getPlugins().add(new it.thoson.device_uuid.DeviceUuidPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin device_uuid, it.thoson.device_uuid.DeviceUuidPlugin", e);
@@ -24,6 +29,11 @@ public final class GeneratedPluginRegistrant {
       flutterEngine.getPlugins().add(new com.baseflow.geolocator.GeolocatorPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin geolocator_android, com.baseflow.geolocator.GeolocatorPlugin", e);
+    }
+    try {
+      flutterEngine.getPlugins().add(new com.baseflow.permissionhandler.PermissionHandlerPlugin());
+    } catch (Exception e) {
+      Log.e(TAG, "Error registering plugin permission_handler_android, com.baseflow.permissionhandler.PermissionHandlerPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new net.touchcapture.qr.flutterqr.FlutterQrPlugin());
